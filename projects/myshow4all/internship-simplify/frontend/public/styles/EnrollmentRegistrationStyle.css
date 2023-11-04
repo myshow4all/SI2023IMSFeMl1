@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background : mediumorchid;
+}
+
+.form-container {
+    text-align: left;
+    max-width: 450px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgb(227, 136, 250);
+    box-shadow: 4px 2px 5px #59595994;
+}
+
+legend{
+    font-family: 'Product Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+    color : white;
+    text-shadow: 4px 4px 5px #333;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group #formComponent{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Product Sans', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 4px 4px 5px #333;
+}
+
+.form-group input {
+    color : black;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 4px 2px 5px #59595994;
+    font-family: 'Product Sans', sans-serif;
+    
+}
+
+.form-group input[placeholder]{
+    font-family: 'Product Sans';
+    font-size: 12px;
+    font-style: italic;
+    opacity: 90%;
+    color: black;
+}
+
+form .flex-container{
+    margin-top: 35px;
+    display: flex;
+    align-content: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form #buttons{
+    margin: 7px;
+    border-radius: 5px;
+    border: 3px ;
+    padding: 3px;
+    width : 150px;
+    background-color: #9595ff;
+    color: whitesmoke;
+    box-shadow: 4px 4px 5px #36363694;
+    font-size: 14px;
+    font-family: 'Product Sans';
+
+}
+
+form #buttons:hover{
+    border: 2px solid papayawhip;
+    box-shadow: 2px 2px 5px #8BC6EC;
+}
+.content{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    text-align: center;
+    opacity: 75%;
+    font-size: 15px;
+    color: #333;
+    font-family: 'Product Sans';
+}

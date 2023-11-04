@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="/Projects/Internship-Simplify/Public/FrontEnd/Styles/EnrollmentRegistrationStyle.css">
+</head>
+<body>
+
+    <div class = "form-container">
+        <form action="">
+            <legend>Internship Enrollment Form</legend>
+            <div class = "form-group">
+                <label for="name" id = "formComponent">Name</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z]+" placeholder="Alphabets only">
+            </div>
+            <div class = "form-group">
+                <label for="course" id = "formComponent">Course</label> 
+                <input type="text" id="course" name="course" requried pattern="[A-Za-z\s]+" placeholder="Alphabets only">
+            </div>
+            <div class = "form-group">
+                <label for="domain" id = "formComponent">Domain</label>
+                <input type="text" id="domain" name="domain" pattern="[A-Za-z0-9\s]+" required placeholder="Alpha-numeric only">
+            </div>
+            <div class = "form-group">
+                <label for="collegeName" id = "formComponent">College</label>
+                <input type="text" id="collegeName" name="collegeName" pattern="[A-Za-z0-9\s]+" requried placeholder="Alphabets only">
+            </div>
+            <div class = "form-group">
+                <label for="contactNumber" id = "formComponent">Contact Number</label> 
+                <input type="tel" id="contactNumber" name="collegeName" pattern="[0-9+\s]{10,15}" required placeholder="+XX XXXXXXXXXX">
+            </div>
+            
+            <div class = "form-group">
+                <label for="email" id = "formComponent">Email ID</label>
+                <input type="email" id="email" name="email" required placeholder="johndoe23@gmal.com">
+            </div>
+
+            <div class = "flex-container">
+                <input type = "submit" id="buttons">
+                <input type="reset" id="buttons">
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <footer>
+        <div class = "content">
+            <label for="copyRightMsg">&copy; 2023 Myshow4all. All Rights Reserved.</label>
+        </div>
+    </footer>
+</body>
+</html>
