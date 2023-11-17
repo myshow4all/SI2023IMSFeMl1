@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Poppins:ital,wght@0,300;0,500;1,300&display=swap');
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background : mediumorchid; */
+    margin-left: 35px;
+    background-image: url("../images/enrollmentpage.jpg");
+    background-position: fixed;
+    background-size: 1803px 886px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form-container {
+    text-align: left;
+    max-width: 450px;
+    width: 100%;
+    padding: 31px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgb(227, 136, 250);
+    box-shadow: 4px 2px 5px #59595994;
+    margin-left: 39px;
+}
+
+legend{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-top: 15px;
+    text-transform : uppercase;
+    text-align: center;
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+    color : #eee;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group #formComponent{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Product Sans', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+.form-group input {
+    color : black;
+    width: 100%;
+    height : 218%;
+    padding: 12px;
+    border: none;
+    border-bottom: 3px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 4px 2px 5px #29292994;
+    font-family: 'SF UI Display', sans-serif;
+    font-size: 32px;
+}
+
+.form-group input[placeholder]{
+    font-family: 'SF UI Display', sans-serif;
+    font-size: 15px;
+    opacity: 90%;
+    color: black;
+}
+
+form .flex-container{
+    margin-top: 35px;
+    display: flex;
+    align-content: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form #buttons{
+    margin: 7px;
+    border-radius: 5px;
+    border: 3px ;
+    padding: 3px;
+    width : 150px;
+    background-color: #9595ff;
+    color: whitesmoke;
+    box-shadow: 4px 4px 5px #36363694;
+    font-size: 14px;
+    font-family: 'Product Sans';
+
+}
+
+form #buttons:hover{
+    background-color : lightsteelblue;
+    color : #333;
+    transform : scale3d(1.05);
+    box-shadow: 2px 2px 5px #8BC6EC;
+    
+}
+.content{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    text-align: center;
+    opacity: 79%;
+    font-size: 15px;
+    color: papayawhip;
+    font-family: 'Poppins';
+}

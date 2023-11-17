@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Poppins:ital,wght@0,300;0,500;1,300&display=swap');
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: space-between;
+    margin: 0;
+    padding-bottom: 23px; 
+    background-image: url("../images/trainee-registration.jpg"); 
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.formContainer{
+    margin-top: 50px;
+    text-align: left;
+    max-width: 600px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 4px 2px 5px #59595994;
+    background-color: #eee;
+    margin-bottom: 34px;
+    margin-left: 5%;
+}
+#heading{
+    text-align: center;
+    font-family: 'Graduate', serif;;
+    font-size: 30px;
+    color: mediumorchid;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.67px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#sectionTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17.8px;
+    margin-right: 70px;
+    color: mediumorchid;
+}
+
+#personalInformation, #educationalInformation, #identificationDocuments, #medicalHistory, #emgContactInfo, #additionalDocuments{
+    border-radius: 5px;
+    border: 0.07px solid mediumorchid;
+}
+
+#formComponent{
+    display: block;
+    padding-left: 3px;
+    margin-top: 4.699999999999999px;
+    font-family: 'Poppins' , sans-serif;
+    color: mediumorchid;
+    letter-spacing: 0.5px;
+}
+
+input, textarea{
+    color: black;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 3px solid blue;
+    border-radius: 4px;
+    box-shadow: 4px 2px 5px #29292994;
+    font-family: 'Poppins', sans-serif;
+    width: 550px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+/*Styling input[type="file"]*/
+input[type="file"]{
+    display:none;
+}
+#documentUpload, #gDocumentUpload{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: mediumorchid;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 4px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all 0.2sec ease;
+}
+#fileNameMessage1, #fileNameMessage2{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15px;
+    color: red;
+    opacity: 50%;
+}
+.Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Buttons #buttons{
+    margin: 15px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 3px;
+    padding: 3px;
+    width: 150px;
+    background-color: #9595ff;
+    color: white;
+}
+/*Footer*/
+.content{
+    position: fixed;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9595ff;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    text-align: center;
+    opacity: 70%;
+    font-size: 15px;
+}

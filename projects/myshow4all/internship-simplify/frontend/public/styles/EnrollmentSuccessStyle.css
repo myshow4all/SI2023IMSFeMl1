@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Poppins:ital,wght@0,300;0,500;1,300&display=swap');
+body{
+    background-color: mediumorchid;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+pre{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    opacity: 55%;
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 14.5px;
+}
+
+.content{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    text-align: center;
+    opacity: 75%;
+}

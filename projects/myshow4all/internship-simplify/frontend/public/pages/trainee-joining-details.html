@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainee Joining Details</title>
+    <link rel="stylesheet" href="/SI2023IMSFeMl1/projects/myshow4all/internship-simplify/frontend/public/styles/TraineeJoiningDetailsStyle.css">
+</head>
+<body>
+    <div class="formContainer">
+         <form action="">
+            <legend id="heading">Trainee Joining Details</legend>
+            
+            <fieldset id="personalInformation">
+                <legend id="sectionTitle">Personal Information</legend>
+                <!-- Full Name-->
+                <label for="fullName" id="formComponent">Full Name</label>
+                <input type="text" id="fullName" pattern="[A-Za-z\s]" placeholder="Alphabets Only" title="Your Full Name as per SSC" required>
+                <!-- DOB-->
+                <label for="dateOfBirth" id="formComponent">Date of Birth</label>
+                <input type="date" id="dateOfBirth" required title="Please choose your Date of Birth" min="2000-01-01" max="2024-12-31">
+                <!-- Address -->
+                <label for="address" id="formComponent">Address</label>
+                <textarea name="address" id="address" cols="70" rows="5" style="height: 100px;" placeholder="Your Address" title="Enter your address seperated by semi-colon" required></textarea>
+            </fieldset>
+
+            <fieldset id="educationalInformation">
+                <legend id="sectionTitle">Educational Information</legend>
+                
+                <!-- trainee ID -->
+                <label for="traineeID" id="formComponent">Trainee ID</label>
+                <input type="text" id="traineeID" placeholder="Your Trainee ID" title="Enter your Trainee Identity Code/Number" required>
+                
+                <!-- Internship domain -->
+                <label for="internshipDomain" id="formComponent">Internship Domain</label>
+                <input type="text" id="internshipDomain" placeholder="Your Internship Domain" title="Let us know! What type of Internship are you looking for?" required>
+            
+            </fieldset>
+
+            <fieldset id="identificationDocuments">
+                <legend id="sectionTitle">Identification Documents</legend>
+                
+                <!-- Document Upload -->
+                <label for="uploadDocument" id="formComponent">Upload ID Document</label>
+                <input type="file" id="fileUpload1" accept=".pdf" title="Upload Your College Identity Card"  onchange="displayFileName1(this)" required>
+                <label for="fileUpload1" id="documentUpload" title="Upload your college Identity Card">Upload</label>
+                <span id="fileNameMessage1"></span>
+            </fieldset>
+
+            <fieldset id="medicalHistory">
+                <legend id="sectionTitle">Medical History</legend>
+                
+                <!-- Medical History -->
+                <label for="medicalHistory" id="formComponent">Medical History</label>
+                <textarea placeholder="Mention the Challenges, which are cured by medications!" style="height: 100px;" required rows="5" cols="70" title="If there are no medications, then make it 'NO'"></textarea>
+            
+            </fieldset>
+            
+            <fieldset id="emgContactInfo">
+                <legend id="sectionTitle">Emergency Contact Information</legend>
+                
+                <!-- Emergency Contact Name -->
+                <label for="emgContactName" id="formComponent">Emergency Contact Name</label>
+                <input type="text" id="emergencyContactName" pattern="[A-Za-z\s]" placeholder="Alphabets Only" title="Enter the person name, to contact on emergence">
+
+                <!-- Emergency Contact Number -->
+                <label for="emgContactNumber" id="formComponent">Contact Number</label>
+                <input type="tel" id="emergencyContactNumber" title="Enter the person's contact number" placeholder="Your Emergency contact number">
+            </fieldset>
+
+            <fieldset id="additionalDocuments">
+                <legend id="sectionTitle">Additional Document</legend>
+                
+                <!-- Documents Upload -->
+                <label for="uploadDocument" id="formComponent">Upload Other Documents (Valid Government-Approved address ID proofs)</label>
+                <input type="file" id="fileUpload2" accept=".pdf" title="Upload Your Govt.Approved documents at least 1" onchange="displayFileName2(this)">
+                <label for="fileUpload2" id="gDocumentUpload" title="Upload Your Govt.Approved documents at least 1">Upload</label>
+                <span id="fileNameMessage2"></span>
+            </fieldset>
+
+            <div class = "Buttons">
+                <input type="submit" id="buttons">
+                <input type="reset" id="buttons">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="content">
+            <label for="copyRightMsg">&copy; MyShow4All. All Rights Reserved</label>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function displayFileName1(input){
+            var fileName = input.value.split("\\").pop();
+            document.getElementById("fileNameMessage1").textContent = "File : " + fileName;
+        }
+        function displayFileName2(input){
+            var fileName = input.value.split("\\").pop();
+            document.getElementById("fileNameMessage2").textContent = "File : " + fileName;
+        }
+    </script>
+</body>
+</html>
